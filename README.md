@@ -1,2 +1,1 @@
-/node_modules
-node_modules/
+Built this landing page with tailwindcss while following a tutorial by netninja
