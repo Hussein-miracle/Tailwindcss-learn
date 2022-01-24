@@ -9,16 +9,16 @@
     <link href="./style.css" rel="stylesheet">
 </head>
 <body class="text-gray-600  font-serif   " >
-    <article>
-        <div class="">
-            <nav class="flex justify-around">
+    <article class="grid md:grid-cols-3 ">
+        <div class="md:col-span-1 md:flex md:justify-end">
+            <nav class="">
                 <div >
-                    <h1 class="font-bold uppercase p-4 border-b border-gray-400">
-                        <a href="/" class="text-sm md:text-xl ">Tailwind Foods</a>
+                    <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+                        <a href="/" class="hover:text-gray-700">Tailwind Foods</a>
                     </h1>
                 </div>
 
-                <ul class="flex-column justify-between ">
+                <ul class="text-sm mt-6  ">
                     <li class="text-gray-700 my-2">
                         <a href="#" class="text-green-500 sm:text-red-500 lg:text-blue-500 ">
                             <span>Home</span>
@@ -45,10 +45,10 @@
         </div>
 
 
-        <main class="px-16 py-6 bg-gray-100">
+        <main class="px-16 py-6 bg-gray-100 md: col-span-2">
             <div class="flex justify-center md:justify-end">
-                <a href="#" target="_blank" rel="noopener noreferrer" class="text-primary">Log In</a>
-                <a href="#" target="_blank" rel="noopener noreferrer" class="text-primary">Sign Up</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="text-primary btn border-primary md:border-2  hover:bg-primary hover:text-white hover:opacity-2 transition ease-in duration-500">Log In</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="text-primary ml-2 border-primary md:border-2 btn hover:bg-primary hover:text-white transition ease-in duration-500">Sign Up</a>
             </div>
 
             
@@ -62,19 +62,45 @@
                 <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
 
 
-                <div class="mt-8">
+                <div class="mt-8 grid md:grid-cols-3 gap-5 ">
                     <!-- Cards go here -->
 
 
-                    <div class="bg-white  rounded-sm ">
-                        <img src="./img/stew.jpg" alt="stew">
-                        <div>
-                            <span>5 Beans Chilli Stew</span>
-                            <span>Recipe by ODUN </span>
+                    <div class="card">
+                        <img class ="w-full h-32 sm:48 object-cover" src="./img/stew.jpg" alt="stew">
+                        <div class="m-4">
+                            <span class="font-bold block">5 Beans Chilli Stew</span>
+                            <span class="block text-gray-500 text-sm">Recipe by ODUN </span>
+                        </div>
+                        <div class="badge"> 
+                            <svg class="w-5 inline-block" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 8v413 3m6-3a9 9 0 11-18 0 9 9 0 0118  0z"></path></svg>
+                            <span>25 mins</span>
                         </div>
                     </div>
-
-
+                    <div class="card">
+                        <img class ="w-full h-32 sm:48 object-cover" src="./img/noodles.jpg" alt="noodles">
+                        <div class="m-4">
+                            <span class="font-bold block">Noodle Stew</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Lasisi </span>
+                        </div>
+                        <div class="badge"> 
+                            <svg class="w-5 inline-block" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 8v413 3m6-3a9 9 0 11-18 0 9 9 0 0118  0z"></path></svg>
+                            <span>20 mins</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class ="w-full h-32 sm:48 object-cover" src="./img/curry.jpg" alt="stew">
+                        <div class="m-4">
+                            <span class="font-bold block">Curry Fillet</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Sapastic</span>
+                        </div>
+                        <div class="badge"> 
+                            <svg class="w-5 inline-block" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 8v413 3m6-3a9 9 0 11-18 0 9 9 0 0118  0z"></path></svg>
+                            <span>15 mins</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
                     <h4 class="font-bold mt-12 pb-2 border-b border-gray-200 ">Most Popular</h4>
 
                     <div class="mt-8">
@@ -82,8 +108,8 @@
                     </div>
 
                     <div class="flex justify-center ">
-                        <div class="bg-secondary-100 text-secondary-200">
-                            Load More
+                        <div class="bg-secondary-100 text-secondary-200 btn hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition duration-500 linear ">
+                          Load More &rarr;
                         </div>
                     </div>
                 </div>
