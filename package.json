@@ -1,0 +1,14 @@
+{
+  "name": "tailwindlearn",
+  "version": "1.0.0",
+  "description": "A page built  with tailwindcss",
+  "main": "index.js",
+  "scripts": {
+    "start-css": "tailwindcss -i src/style.css -o public/style.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.15"
+  }
+}
